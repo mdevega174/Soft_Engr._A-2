@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let score = parseInt(prompt("Enter the student's score:"));
+
+// Determine pass or fail
+if (score >= 75) {
+    console.log("The student has passed.");
+} else {
+    console.log("The student has failed.");
+}
+
+// Assign letter grade using switch-case
+switch (true) {
+    case (score >= 90):
+        console.log("Grade: A");
+        break;
+    case (score >= 80):
+        console.log("Grade: B");
+        break;
+    case (score >= 75):
+        console.log("Grade: C");
+        break;
+    default:
+        console.log("Grade: F");
+}
+    </script>
+</body>
+</html>
